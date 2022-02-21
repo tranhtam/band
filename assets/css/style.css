@@ -214,10 +214,9 @@ html {
 } */
 
 .content .content-section{
-    width: 800px;
     margin-left: auto;
     margin-right: auto;
-    padding: 64px 0 112px;
+    padding: 64px 90px 112px;
 }
 
 .content .section-heading{
@@ -240,15 +239,14 @@ html {
     margin-top: 25px;
     text-align: justify;
     line-height: 1.4;
+    
 }
 
 .content .members-list{
     margin-top: 48px;
 }
 
-.content .member-item{
-    text-align: center;
-}
+
 
 .content .member-name{
     font-size: 15px;
@@ -491,4 +489,50 @@ html {
 
 .footer .copyright a {
     color: rgba(0, 0, 0, 0.6);
+}
+
+@media screen and (max-width: 740px) {
+    .place-desc {
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .nav-search-btn,
+    .members-list {
+        display: none;
+    }
+    
+    
+    .places-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;       
+    }
+    .col-third {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .contact-content{
+        display: flex;
+        flex-direction: column;       
+    }
+    .contact-info,
+    .contact-form {
+        width: 100%;
+    }
+
+    
+}
+
+@media screen and (max-width: 545px) {
+    .header {
+        height: 92px;
+    }
+    .slider {
+        margin-top: 92px;
+    } 
 }
