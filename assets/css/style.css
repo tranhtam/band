@@ -534,5 +534,8 @@ html {
     }
     .slider {
         margin-top: 92px;
-    } 
+    }
+    .content .content-section {
+        padding: 64px 20px 112px;
+    }
 }
